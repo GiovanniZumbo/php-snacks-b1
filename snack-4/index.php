@@ -8,13 +8,18 @@ if (isset($_GET["votosufficiente"]) && ($_GET["votosufficiente"] === "on")) {
     // Faccio un array dove mettere gli studenti con la sufficienza
     $classeFiltrata = [];
     //Cerco in ogni classe gli studenti con la sufficienza 
-    foreach ($classe as $alunno) {
-        if ($alunno["voto_medio"] >= 6) {
-            //inserisco l'alunno dentro l'array filtrato
-            array_push($classeFiltrata[], $alunno);
+    foreach ($classi as $classe => $studenti) {
+
+        $classeFiltrata[$classe] = [];
+
+        foreach ($studenti as $alunno) {
+
+            if ($alunno["voto_medio"] >= 6) {
+                //inserisco l'alunno dentro l'array filtrato
+                array_push($classeFiltrata[$classe], $alunno);
+            }
         }
     }
-    $classeFiltrata[] = $classe;
 } else {
     $classeFiltrata = $classe;
 }
@@ -47,11 +52,11 @@ if (isset($_GET["votosufficiente"]) && ($_GET["votosufficiente"] === "on")) {
                     <button type="submit" class="btn btn-primary">Cerca</button>
                 </div>
             </form>
-            <?php foreach ($classi as $classe) { ?>
+            <?php foreach ($classeFiltrata as $nomeClasse => $studenti) { ?>
 
                 <div class="class border border-primary rounded-2 mb-3 p-2">
 
-                    <?php foreach ($classe as $alunno) { ?>
+                    <?php foreach ($studenti as $alunno) { ?>
                         <div class="alumn border border-info rounded 2 mb-2 p-2">
                             <ul class="list-unstyled">
                                 <li>Nome: <?= $alunno["nome"] ?></li>
