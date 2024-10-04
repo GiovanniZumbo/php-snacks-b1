@@ -1,5 +1,5 @@
 <?php
-$message;
+$message = '';
 $username = $_GET["username"];
 
 
