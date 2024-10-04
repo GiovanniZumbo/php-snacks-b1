@@ -9,7 +9,7 @@ $classi = [
             "anni" => 23,
             "voto_medio" => 8.5,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 2,
@@ -18,7 +18,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 3.5,
             "linguaggio_preferito" => "JS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 3,
@@ -27,7 +27,7 @@ $classi = [
             "anni" => 23,
             "voto_medio" => 5.5,
             "linguaggio_preferito" => "CSS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 4,
@@ -36,7 +36,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 8.0,
             "linguaggio_preferito" => "HTML",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 5,
@@ -45,7 +45,7 @@ $classi = [
             "anni" => 22,
             "voto_medio" => 7.5,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
     ],
     "Classe 2A" => [
@@ -56,7 +56,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 9.0,
             "linguaggio_preferito" => "JS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 22,
@@ -65,7 +65,7 @@ $classi = [
             "anni" => 23,
             "voto_medio" => 4.3,
             "linguaggio_preferito" => "HTML",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 30,
@@ -74,7 +74,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 5.4,
             "linguaggio_preferito" => "CSS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 33,
@@ -83,7 +83,7 @@ $classi = [
             "anni" => 22,
             "voto_medio" => 8.4,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 20,
@@ -92,7 +92,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 9.5,
             "linguaggio_preferito" => "JS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
     ],
     "Classe 3A" => [
@@ -103,7 +103,7 @@ $classi = [
             "anni" => 22,
             "voto_medio" => 6.9,
             "linguaggio_preferito" => "CSS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 32,
@@ -112,7 +112,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 5.3,
             "linguaggio_preferito" => "HTML",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 33,
@@ -121,7 +121,7 @@ $classi = [
             "anni" => 22,
             "voto_medio" => 8.2,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 34,
@@ -130,7 +130,7 @@ $classi = [
             "anni" => 22,
             "voto_medio" => 4.8,
             "linguaggio_preferito" => "JS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 35,
@@ -139,7 +139,7 @@ $classi = [
             "anni" => 27,
             "voto_medio" => 8.1,
             "linguaggio_preferito" => "CSS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
     ],
     "Classe 4A" => [
@@ -150,7 +150,7 @@ $classi = [
             "anni" => 30,
             "voto_medio" => 4.2,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 47,
@@ -159,7 +159,7 @@ $classi = [
             "anni" => 30,
             "voto_medio" => 5.1,
             "linguaggio_preferito" => "HTML",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 48,
@@ -168,7 +168,7 @@ $classi = [
             "anni" => 22,
             "voto_medio" => 3.7,
             "linguaggio_preferito" => "JS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 49,
@@ -177,7 +177,7 @@ $classi = [
             "anni" => 30,
             "voto_medio" => 8.6,
             "linguaggio_preferito" => "CSS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 50,
@@ -186,7 +186,7 @@ $classi = [
             "anni" => 30,
             "voto_medio" => 4.0,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
     ],
     "Classe 5A" => [
@@ -197,7 +197,7 @@ $classi = [
             "anni" => 33,
             "voto_medio" => 8.7,
             "linguaggio_preferito" => "JS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 62,
@@ -206,7 +206,7 @@ $classi = [
             "anni" => 33,
             "voto_medio" => 4.1,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 63,
@@ -215,7 +215,7 @@ $classi = [
             "anni" => 33,
             "voto_medio" => 4.4,
             "linguaggio_preferito" => "HTML",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 64,
@@ -224,7 +224,7 @@ $classi = [
             "anni" => 30,
             "voto_medio" => 5.0,
             "linguaggio_preferito" => "CSS",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
         [
             "id" => 65,
@@ -233,7 +233,7 @@ $classi = [
             "anni" => 30,
             "voto_medio" => 6.7,
             "linguaggio_preferito" => "PHP",
-            "immagine" => "https://source.unsplash.com/random/200x200?person",
+            "immagine" => "https://loremflickr.com/200/200/person",
         ],
     ],
 ];
