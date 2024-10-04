@@ -1,5 +1,23 @@
 <?php
 include_once "classes.php";
+
+$classeFiltrata;
+
+//Filtro voto medio >= di 6
+if (isset($_GET["votosufficiente"]) && ($_GET["votosufficiente"] === "on")) {
+    // Faccio un array dove mettere gli studenti con la sufficienza
+    $classeFiltrata = [];
+    //Cerco in ogni classe gli studenti con la sufficienza 
+    foreach ($classe as $alunno) {
+        if ($alunno["voto_medio"] >= 6) {
+            //inserisco l'alunno dentro l'array filtrato
+            array_push($classeFiltrata[], $alunno);
+        }
+    }
+    $classeFiltrata[] = $classe;
+} else {
+    $classeFiltrata = $classe;
+}
 ?>
 
 
@@ -19,6 +37,16 @@ include_once "classes.php";
     <main>
         <div class="container">
             <h1>Classi</h1>
+
+            <form action="index.php" method="GET">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="votosufficiente" id="votosufficiente">
+                    <label class="form-check-label" for="votosufficiente">
+                        Voto medio almeno 6.0
+                    </label>
+                    <button type="submit" class="btn btn-primary">Cerca</button>
+                </div>
+            </form>
             <?php foreach ($classi as $classe) { ?>
 
                 <div class="class border border-primary rounded-2 mb-3 p-2">
