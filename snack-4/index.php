@@ -3,8 +3,8 @@ include_once "classes.php";
 
 $classiFiltrate;
 
-// //Filtro voto medio >= di 6
-// if (isset($_GET["votosufficiente"]) && ($_GET["votosufficiente"] === "on")) {
+// // * Filtro voto medio >= di 6
+// if (isset($_GET["votoSufficiente"]) && ($_GET["votoSufficiente"] === "on")) {
 //     // Creo un array dove mettere tutte le classi filtrate
 //     $classiFiltrate = [];
 //     // Cerco in tutte le classi, le classi che contengono gli studenti richiesti
@@ -24,9 +24,9 @@ $classiFiltrate;
 //     $classiFiltrate = $classi;
 // }
 
-//Filtro voto massimo
+// * Filtro voto massimo
 // ! Verifico che la variabile sia settata e sia un numero
-if (isset($_GET["votomassimo"]) && is_numeric($_GET["votomassimo"])) {
+if (isset($_GET["votoMassimo"]) && is_numeric($_GET["votoMassimo"])) {
     // Creo un array dove mettere tutte le classi filtrate
     $classiFiltrate = [];
     // Cerco in tutte le classi, le classi che contengono gli studenti richiesti
@@ -36,7 +36,7 @@ if (isset($_GET["votomassimo"]) && is_numeric($_GET["votomassimo"])) {
         // Cerco in ogni classe gli studenti richiesti
         foreach ($alunni as $alunno) {
 
-            if ($alunno["voto_medio"] <= $_GET["votomassimo"]) {
+            if ($alunno["voto_medio"] <= $_GET["votoMassimo"]) {
                 //inserisco l'alunno dentro l'array filtrato
                 array_push($classiFiltrate[$classe], $alunno);
             }
@@ -46,6 +46,26 @@ if (isset($_GET["votomassimo"]) && is_numeric($_GET["votomassimo"])) {
     $classiFiltrate = $classi;
 }
 
+// * Filtro per il linguaggio preferito
+
+if (isset($_GET["linguaggioScelto"]) && $_GET["linguaggioScelto"] !== "default") {
+    $classiFiltrate = [];
+    // Cerco in tutte le classi, le classi che contengono gli studenti richiesti
+    foreach ($classi as $classe => $alunni) {
+        // Creo un array con gli studenti che hanno la sufficienza
+        $classiFiltrate[$classe] = [];
+        // Cerco in ogni classe gli studenti richiesti
+        foreach ($alunni as $alunno) {
+
+            if ($alunno["linguaggio_preferito"] === $_GET["linguaggioScelto"]) {
+                //inserisco l'alunno dentro l'array filtrato
+                array_push($classiFiltrate[$classe], $alunno);
+            }
+        }
+    }
+} else {
+    $classiFiltrate = $classi;
+}
 
 
 ?>
@@ -69,19 +89,32 @@ if (isset($_GET["votomassimo"]) && is_numeric($_GET["votomassimo"])) {
             <h1>Classi</h1>
 
             <form class="my-2" action="index.php" method="GET">
+
+                <!-- Checkbox per la suffcienza -->
+
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="votosufficiente" id="votosufficiente">
-                    <label class="form-check-label" for="votosufficiente">
+                    <input class="form-check-input" type="checkbox" name="votoSufficiente" id="votoSufficiente">
+                    <label class="form-check-label" for="votoSufficiente">
                         Voto medio almeno 6.0
                     </label>
                 </div>
+
+                <!-- Form per il voto massimo -->
+
                 <div class="mb-3">
                     <label for="" class="form-label">Inserisci il voto medio massimo</label>
-                    <input type="number" class="form-control" id="votomassimo" name="votomassimo" min="0" max="10" step="0.1">
+                    <input type="number" class="form-control" id="votoMassimo" name="votoMassimo" min="0" max="10" step="0.1">
                 </div>
-                <div>
 
-                </div>
+                <!-- Select per il linguaggio preferito -->
+
+                <select class="form-select mb-3" name="linguaggioScelto" id="linguaggioScelto">
+                    <option selected value="default">Scegli il linguaggio</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">JS</option>
+                    <option value="PHP">PHP</option>
+                </select>
 
                 <button type="submit" class="btn btn-primary">Cerca</button>
             </form>
