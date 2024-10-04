@@ -1,0 +1,7 @@
+.container > :nth-child(odd){
+    border: 3px solid grey;
+}
+
+.container >  :nth-child(even){
+    border: 3px solid green;
+}
