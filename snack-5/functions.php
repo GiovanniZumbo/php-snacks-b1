@@ -1,9 +1,9 @@
 <?php
 
-
-function isPalindrome()
+function isPalindrome($word)
 {
-    if (strrev($_GET["userword"] === $_GET["userword"])) {
+
+    if (strrev($word) === $word) {
         return true;
     } else {
         return false;
