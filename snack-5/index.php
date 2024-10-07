@@ -18,9 +18,18 @@
             <h4>Verifica se la tua parola è palindroma</h4>
 
             <form action="index.php" method="get">
-                <input type="text" class="form-control mb-3">
+                <input type="text" class="form-control mb-3" name="userword">
                 <button class="btn btn-success">Verifica</button>
             </form>
+
+            <div>
+                <?php if  { ?>
+
+                <p>La tua parola è palindroma</p>
+                <?php  } else { ?>
+                    <p>La tua parola non è palindroma</p>
+                <?php } ?>
+            </div>
         </div>
     </main>
 
